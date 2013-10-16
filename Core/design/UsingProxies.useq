@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.2" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="User" project="Struct" file="/Struct/test/User.java" binary="false" label="user" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="139" y="0"/>    
+    <execution id="2">      
+      <position height="253" width="80" x="5" y="119"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="ExampleProxy" project="Struct" file="/Struct/test/ExampleProxy.java" 
+    binary="false" label="exampleProxy" type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="198" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="105" x="89" y="217"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="105" x="89" y="276"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="105" x="89" y="330"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="com.blockwithme.lessobjects.proxy.ProxyCursor" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/proxy/ProxyCursor.java" binary="false" label="proxyCursor" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="291" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="156" x="198" y="140"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="156" x="198" y="175"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="ProxyCursor(java.lang.Class[]&lt;?&gt;,java.lang.Class&lt;?&gt;,com.blockwithme.lessobjects.Compiler,int)">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="selectType(int,java.lang.Class&lt;?&gt;):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="setField1(byte):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="setField2(char):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="setField3(double):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>
+</sequence-diagram>

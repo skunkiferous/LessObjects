@@ -1,0 +1,16 @@
+*.class
+# Package Files #
+*.jar
+*.war
+*.ear
+.metadata
+*.bak
+data
+log
+target
+bin
+conf
+/charts
+/benchmarks.h2.db
+/doc
+/target

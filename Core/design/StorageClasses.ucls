@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="com.blockwithme.lessobjects.storage.aligned64.Aligned64Storage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/aligned64/Aligned64Storage.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="214" width="208" x="107" y="675"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.blockwithme.lessobjects.storage.aligned64.Aligned64SparseStorage" 
+    project="Struct" file="/Struct/src/com/blockwithme/lessobjects/storage/aligned64/Aligned64SparseStorage.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="154" width="208" x="112" y="1107"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.blockwithme.lessobjects.storage.aligned64.Aligned64CompositeStorage" 
+    project="Struct" file="/Struct/src/com/blockwithme/lessobjects/storage/aligned64/Aligned64CompositeStorage.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="131" width="208" x="110" y="936"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="com.blockwithme.lessobjects.storage.Storage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/Storage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="199" width="166" x="417" y="142"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="com.blockwithme.lessobjects.storage.SparseStorage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/SparseStorage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="197" y="502"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="false"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="com.blockwithme.lessobjects.storage.BaseLongStorage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/BaseLongStorage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="144" width="166" x="417" y="710"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.blockwithme.lessobjects.storage.AbstractStorage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/AbstractStorage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="212" width="220" x="390" y="396"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.blockwithme.lessobjects.storage.packed.PackedStorage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/packed/PackedStorage.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="192" width="199" x="682" y="686"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.blockwithme.lessobjects.storage.packed.PackedCompositeStorage" 
+    project="Struct" file="/Struct/src/com/blockwithme/lessobjects/storage/packed/PackedCompositeStorage.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="126" width="199" x="682" y="939"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.blockwithme.lessobjects.storage.packed.PackedSparseStorage" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/packed/PackedSparseStorage.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="145" width="199" x="686" y="1112"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="com.blockwithme.lessobjects.storage.TransactionManager" project="Struct" 
+    file="/Struct/src/com/blockwithme/lessobjects/storage/TransactionManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="772" y="502"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="false"/>    
+    </display>  
+  </interface>  
+  <association id="12">    
+    <bendpoint x="559" y="381"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="13" name="baseStorage">        
+        <position height="18" width="72" x="533" y="373"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="15">    
+    <bendpoint x="670" y="352"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <association id="16">    
+    <bendpoint x="550" y="656"/>    
+    <bendpoint x="654" y="648"/>    
+    <bendpoint x="656" y="562"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="17" name="globalFieldsStorage">        
+        <position height="18" width="104" x="575" y="656"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="20">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <realization id="21">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="23">    
+    <bendpoint x="193" y="243"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <realization id="24">    
+    <bendpoint x="491" y="1190"/>    
+    <bendpoint x="493" y="1093"/>    
+    <bendpoint x="33" y="1098"/>    
+    <bendpoint x="32" y="541"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <realization id="26">    
+    <bendpoint x="10" y="1191"/>    
+    <bendpoint x="15" y="512"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="false" 
+    accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="true" package="true" protected="true" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
