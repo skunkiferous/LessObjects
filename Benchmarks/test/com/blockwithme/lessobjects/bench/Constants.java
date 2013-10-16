@@ -34,7 +34,7 @@ public interface Constants {
     FieldFactory FACTORY = new FieldFactoryImpl();
 
     /** The 64 K chunk size */
-    int _64K = 2 * 2 * 2;// 40 * 40 * 40;
+    int _64K = 40 * 40 * 40;
 
     /** The Aligned 64 compiler */
     Aligned64Compiler ALIGNED64 = new Aligned64Compiler();
@@ -49,7 +49,7 @@ public interface Constants {
     CompilerBase PACKED = new PackedCompiler();
 
     /** The * iterations. */
-    int _ITERATIONS = 50; // 20;
+    int _ITERATIONS = 20;
 
     /** The read iterations. */
     int READ_ITERATIONS = _ITERATIONS;
