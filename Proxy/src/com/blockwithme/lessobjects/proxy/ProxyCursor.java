@@ -265,6 +265,9 @@ public class ProxyCursor {
         }
     }
 
+    /** The save proxy classes system property. */
+    private static String SAVE_PROXY_CLASSES = "saveProxyClasses";
+
     /** Class name of ArrayUtil class used in code generation */
     static String ARRAY_UTIL = Util.getClassName(ArrayUtil.class);
 
@@ -660,8 +663,8 @@ public class ProxyCursor {
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 } else {
-                    final ByteOptionalField<?, ?> fld = FACTORY.newByteOptional(
-                            cnvrtr, theFieldInfo.name());
+                    final ByteOptionalField<?, ?> fld = FACTORY
+                            .newByteOptional(cnvrtr, theFieldInfo.name());
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 }
@@ -674,8 +677,8 @@ public class ProxyCursor {
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 } else {
-                    final CharOptionalField<?, ?> fld = FACTORY.newCharOptional(
-                            cnvrtr, theFieldInfo.name());
+                    final CharOptionalField<?, ?> fld = FACTORY
+                            .newCharOptional(cnvrtr, theFieldInfo.name());
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 }
@@ -703,8 +706,8 @@ public class ProxyCursor {
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 } else {
-                    final FloatOptionalField<?, ?> fld = FACTORY.newFloatOptional(
-                            cnvrtr, theFieldInfo.name());
+                    final FloatOptionalField<?, ?> fld = FACTORY
+                            .newFloatOptional(cnvrtr, theFieldInfo.name());
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 }
@@ -734,8 +737,8 @@ public class ProxyCursor {
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 } else {
-                    final LongOptionalField<?, ?> fld = FACTORY.newLongOptional(
-                            cnvrtr, theFieldInfo.name());
+                    final LongOptionalField<?, ?> fld = FACTORY
+                            .newLongOptional(cnvrtr, theFieldInfo.name());
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 }
@@ -749,8 +752,8 @@ public class ProxyCursor {
                             theFieldInfo.arraySize);
                 } else {
 
-                    final ShortOptionalField<?, ?> fld = FACTORY.newShortOptional(
-                            cnvrtr, theFieldInfo.name());
+                    final ShortOptionalField<?, ?> fld = FACTORY
+                            .newShortOptional(cnvrtr, theFieldInfo.name());
                     childArray = new Array(theFieldInfo.name(), fld,
                             theFieldInfo.arraySize);
                 }
@@ -1103,19 +1106,21 @@ public class ProxyCursor {
         theClass.addMethod(con);
     }
 
-    @SuppressWarnings("unused")
+    @SuppressWarnings({ "unused", "boxing" })
     private static void debugPrint(final CtClass theClass) {
-        /* If Generating the actual '.class' files for debugging purpose is needed,
-         * un-comment the following try/catch block to generate '.class' files for all the
-         * generated classes. NOTE - If this is un-commented, classes will be
-         * generated only on the first execution */
-        try {
-            theClass.writeFile();
-        } catch (final Exception e) { // $codepro.audit.disable
-                                      // emptyCatchClause
+        final String saveClasses = System.getProperty(SAVE_PROXY_CLASSES);
+        if (saveClasses != null && Boolean.valueOf(saveClasses)) {
+            /* If Generating the actual '.class' files for debugging purpose is needed,
+             * un-comment the following try/catch block to generate '.class' files for all the
+             * generated classes. NOTE - If this is un-commented, classes will be
+             * generated only on the first execution */
+            try {
+                theClass.writeFile(System.getProperty("java.io.tmpdir"));
+            } catch (final Exception e) { // $codepro.audit.disable
+                                          // emptyCatchClause
+            }
         }
     }
-
     /** Searches for, and returns the Field for the given name in FieldInfo. */
     private static Field<?, ?> getFieldByName(final StructInfo theStruct,
             final FieldInfo theFieldInfo) {
